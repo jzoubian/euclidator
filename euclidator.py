@@ -10,13 +10,11 @@ Euclid Acronym Translator.
 __version__ = "Time-stamp: <2015-03-30 10:55:34 ycopin>"
 __author__ = "Yannick Copin <y.copin@ipnl.in2p3.fr>"
 
-import numpy as N
-
 ecal = """
 Title: Euclid Consortium Acronym List
 Reference: EUCL-IAP-LI-1-001
-Version: 2.02
-Date: 28/02/2014
+Version: 2.02.1
+Date: 28/02/2014 with additions [added]
 
 2dF:	Two Degree Field
 2MASS:	Two Micron All Sky Survey
@@ -57,7 +55,7 @@ ATC:	Astronomy Technology Centre
 AVM:	AVionic Model
 AWG:	(ESA) Astronomy Working Group
 aXe:	Software package for extraction of spectra from HST grism observations
-B-mode:	Non-lensing signal in gravitational shear analysis – Curl term “B” from analogy with Electromagnetic signal
+B-mode:	Non-lensing signal in gravitational shear analysis - Curl term 'B' from analogy with Electromagnetic signal
 BAO:	Baryonic Acoustic Oscillations
 BASSICC:	BAO SimulationS at the Institute for Computational Cosmology
 BBM:	Bread Board Model
@@ -95,7 +93,7 @@ CDR:	Critical Design Review
 CDS:	Centre de Données astronomiques de Strasbourg
 CE:	Conducted Emission
 CEA:	Commissariat à l'Energie Atomique
-CERN:	Centre Européen pour la Recherche Nucléaire – European Organisation for Nuclear Research
+CERN:	Centre Européen pour la Recherche Nucléaire - European Organisation for Nuclear Research
 CFE:	Customer Furnished Equipment
 CFHT:	Canada-France-Hawaii Telescope
 CFHTLenS:	Canada-France-Hawaii Telescope Lensing Survey
@@ -186,6 +184,7 @@ DTCP:	Daily Telemetry Communications Period
 DTA:	Damage Threat Assessment
 DTU:	Denmark Tekniske Universitet
 DUNE:	Dark UNiverse Explorer
+DVP:	Development Plan [added]
 DWG:	Detector Working Group
 E2E:	End-to-End
 EAC:	Estimate At Completion
@@ -229,7 +228,7 @@ EIQT:	Euclid Image Quality Tool
 EIR:	Euclid Instrument Requirement
 ELA:	Euclid Legacy Archive
 ELG:	Early Type Galaxy / Emission Line Galaxy
-E-mode:	Pure gravitational lensing signal in gravitational shear analysis– Divergence term “E” from analogy with Electromagnetic signal
+E-mode:	Pure gravitational lensing signal in gravitational shear analysis - Divergence term 'E' from analogy with Electromagnetic signal
 EM:	Electrical Model / Engineering Model
 EMA:	Euclid Mission Archive
 EMC:	ElectroMagnetic Compatibility / Euclid Mission Consortium (=EC)
@@ -358,8 +357,8 @@ IAL:	Infrastructure Abstraction Layer
 IAP:	Image Analysis Pipeline / Institut d’Astrophysique de Paris
 IAS:	Institut d’Astrophysique Spatiale
 IASF:	INAF Istituto di Astrofisica Spaziale e Fisica cosmic
-IASF-BO:	INAF Istituto di Astrofisica Spaziale e Fisica cosmica – Bologna
-IASF-MI:	INAF Istituto di Astrofisica Spaziale e Fisica cosmica – Milan
+IASF-BO:	INAF Istituto di Astrofisica Spaziale e Fisica cosmica - Bologna
+IASF-MI:	INAF Istituto di Astrofisica Spaziale e Fisica cosmica - Milan
 IBDR:	Instrument Baseline Design Review
 ICA:	Independent Component Analysis
 ICD:	Interface Control Document
@@ -404,7 +403,7 @@ IRAP:	Institut de Recherche en Astrophysique et Planétologie
 IRAS:	InfraRed Astronomical Satellite
 IRD:	Interface Requirements Document
 IQR:	Instrument Qualification Review
-IRFU:	Institut de Recherche sur les lois Fondamentales de l’Univers – CEA
+IRFU:	Institut de Recherche sur les lois Fondamentales de l’Univers - CEA
 IRR:	Instrument Requirement Review
 IS:	Instrument Scientist
 ISDC:	Integral Science Data Center (Switzerland)
@@ -711,6 +710,7 @@ RFI:	Request For Information
 RFQ:	Request For Quotation
 RFW:	Request For Waiver
 RGMM:	Reduced Geometrical Mathematical Model
+RID:	Review Item Discrepancy [added]
 RMS:	Root Mean Square
 RMW:	Read Modify Write
 ROE:	Read-Out Electronics / Royal Observatory Edinburgh
@@ -723,7 +723,7 @@ RPE:	Relative Pointing Error
 R-PLM:	Reduced PayLoad Module
 RPSU:	ROE Power Supply
 RS:	Radiated Susceptibility
-RSD:	Redshift Space Distortion
+RSD:	Redshift Space Distortion / Requirements Specification Document [added]
 RSSD:	ESA Research and Space Support Department
 RSU:	Read-out Shutter Unit
 RT:	Real Time pipeline / Remote Terminal / Room Temperature
@@ -733,7 +733,7 @@ RTMM:	Reduced Thermal Mathematical Model
 RuG:	Rijkuniversiteit Groningen
 SAA:	Solar Aspect Angle
 SAID:	Science Analysis Implementation Document
-SAp:	Service d’Astrophysique – CEA/IRFU
+SAp:	Service d’Astrophysique - CEA/IRFU
 SARD:	System AIV Requirements Document
 SAT:	Science Archive Team
 SC:	SpaceCraft (=S/C)
@@ -769,7 +769,7 @@ SIM-SWG:	Simulations Science Working Group
 SIP:	Science Implementation Plan
 SIR:	System Integration Review
 SIRD:	Science Implementation Requirements Document
-SIS:	Service d’Ingénierie des Systèmes – CEA/IRFU
+SIS:	Service d’Ingénierie des Systèmes - CEA/IRFU
 SISSA:	Scuola Internazionale Superiore di Studi Avanzati
 SIVVP:	Software Integration, Validation and Verification Plan
 SKA:	Square Kilometre Array
@@ -797,6 +797,7 @@ SPC:	Science Programme Committee
 SPM:	Software Product Manager
 SPR:	Science Performance Review
 SPT:	South Pole Telescope
+SPV:    Science Performance Verification [added]
 SPW:	SPace Wire
 SQAP:	Software Quality Assurance Plan
 SQL:	Structured Query Language
@@ -809,10 +810,10 @@ SSC:	Sensor System Chip / Space Science Center (Denmark)
 SRR:	System Requirements Review
 SSE:	Sun-Spacecraft Earth angle
 ST:	Science Team
-STEP:	Shear Testing Programme
+STEP:	Shear TEsting Programme
 STM:	Structural & Thermal Model
 SU:	Shutter Unit
-SUMIRE:	Subaru Measurement of Images and REdshifts
+SUMIRE:	SUbaru Measurement of Images and REdshifts
 SUR:	Science User Requirements
 SVM:	SerVice Module
 SVN:	SubVersioN
@@ -829,7 +830,7 @@ TAITM:	Thermal AIT Manager
 TAITO:	Thermal AIT Operator
 TAS:	Thales Alenia Space
 TB:	Thermal Balance
-TBA:	To Be Assigned – To Be Appointed
+TBA:	To Be Assigned / To Be Appointed
 TBC:	To Be Confirmed
 TBD:	To Be Defined/Determined
 TBR:	To Be Revised
@@ -909,6 +910,7 @@ VLA:	Very Large Array
 VLT:	ESO Very Large Telescope
 VO:	Virtual Observatory
 VObs:	Virtual Observatory
+VPD:	Validation Plan Document [added]
 VST:	VLT Survey Telescope
 VVDS:	VIMOS VLT Deep survey
 WA:	Worst Average PSF
@@ -957,8 +959,7 @@ def read(lines):
         if key not in d:
             d[key] = val
         elif val != d[key]:
-            print("%s: merging %s entries: '%s' and '%s'" %
-                  (filename, key, val, d[key]))
+            print("Merging %s entries: '%s' and '%s'" % (key, val, d[key]))
             d[key] = ' / '.join((d[key], val))
 
     return d
