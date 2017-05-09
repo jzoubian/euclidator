@@ -7,18 +7,18 @@ from __future__ import print_function
 Euclid Acronym Translator.
 """
 
-__version__ = "Time-stamp: <2017-05-09 20:05:18 ycopin>"
+__version__ = "Time-stamp: <2017-05-09 20:18:13 ycopin>"
 __author__ = "Yannick Copin <y.copin@ipnl.in2p3.fr>"
 
 ecal = """
 Title: Euclid Consortium Acronym List
 Reference: EUCL-IAP-LI-1-001
-Version: 2.02.13.00.1
+Version: 3.00.1
 Date: 15/09/2016 with additions [added]
 
 2dF:	Two Degree Field
 2MASS:	Two Micron All Sky Survey
-4MOST:	4-meter Multi Object Spectroscopic Telescope (Instrument for the ESO VISTA telescope: 2019)
+4MOST:	4-meter Multi Object Spectroscopic Telescope (Instrument for the ESO VISTA telescope, 2019)
 A&A:	Astronomy and Astrophysics (Journal) / Authentification and Authorisation
 ABCL:	As Build Configuration List
 AC:	Alternating Current
@@ -35,8 +35,7 @@ AGB:	Asymptotic Giant Branch
 AGES:	AGN and Galaxy Evolution Survey
 AGN:	Active Galactic Nucleus/Nuclei
 AIfA:	Argelander-Institut für Astronomie (Bonn Germany)
-AIM:	Action Items Manager
-AIM:	Astrophysique Instrumentation Modelisation (CEA-CNRS, Saclay, France)
+AIM:	Action Items Manager / Astrophysique Instrumentation Modelisation (CEA-CNRS, Saclay, France)
 Airbus DS:	Airbus Defence and Space (Ex-Astrium)
 AIT:	Assembly Integration and Testing / Assembly Integration and Test
 AIV:	Assembly Integration and Verification
@@ -99,8 +98,7 @@ CCSDS:	Consultative Committee for Space Data System
 CDE:	Coupled Dark Energy
 CDF:	Concurrent Design Facility
 CDM:	Cold Dark Matter
-CDMS:	Command and Data Management System
-CDMS:	Cryogenic Dark Matter Search
+CDMS:	Command and Data Management System / Cryogenic Dark Matter Search
 CDMU:	Command and Data Management Unit
 CDPU:	Control and Data Processing Unit (VIS)
 CDR:	Critical Design Review
@@ -355,8 +353,7 @@ GEMS:	Galaxy Evolution from Morphology and SED Survey
 GEPI:	Galaxies, Etoiles, Physique et Instrumentation (Paris, France)
 GEV:	Galaxy and AGN Evolution
 GFRP:	Glass Fiber Reinforced Plastic
-GG:	(pure) Galaxy-Galaxy lensing signal
-GG:	Gravitational-Gravitational ellipticity (shear-shear) correlation
+GG:	(pure) Galaxy-Galaxy lensing signal / Gravitational-Gravitational ellipticity (shear-shear) correlation
 GGL:	Galaxy-Galaxy Lensing
 GI:	Gravitational-Intrinsic ellipticity (shape-shear) cross-correlations
 GIM2D:	Galaxy Image 2-Dimension (two dimensional decomposition program)
@@ -383,7 +380,7 @@ GWA:	Grism Wheel Assembly
 H2020:	Horizon 2020 (European Commission Framework Programme for Research and Innovation 2014-2020)
 H2RG:	HAWAII 2RG - HgCdTe Astronomy Wide Area Infrared Imager 2k2 Resolution, Reference pixels and Guide mode
 HAR:	Harness
-H/K:	HouseKeeping
+H/K:	House-Keeping
 HPC:	High Performance Computing
 HPCC:	High Performance Computing Center
 HDF:	Hubble Deep Field
@@ -392,13 +389,11 @@ HEALPIX:	Hierarchical Equal Area isoLatitude PIXelisation
 HETDEX:	Hobby-Eberly Telescope Dark Energy Experiment
 HGA:	High Gain Antenna
 HgCdTe:	Hg (Mercury) Cadmium Telluride
-H/K:	House-Keepings
 HOD:	Halo Occupation Distribution
 HSC:	HyperSuprime Camera (mounted on prime focus of Subaru telescope)
 HST:	Hubble Space Telescope
 HW:	HardWare (=H/W)
-IAC:	Instituto de Astrofísica de Canarias (Canarias, Spain)
-IAC:	International Astronautical Congress
+IAC:	Instituto de Astrofísica de Canarias (Canarias, Spain) / International Astronautical Congress
 IADC:	Inter-Agency space Debris Coordination Committee
 IAF:	International Astronautical Federation
 IAFR:	Instrument Acceptance Flight Review
@@ -416,8 +411,7 @@ ICD:	Interface Control Document
 ICDR:	Instrument Critical Design Review
 ICE:	Institut de Ciencies de l’Espai (Barcelona, Spain)
 ICG:	Institute of Cosmology and Gravitation (Portsmouth, UK)
-ICL:	Internal Communication Lead
-ICL:	IntraCluster Light
+ICL:	Internal Communication Lead / IntraCluster Light
 ICM:	IntraCluster Medium
 ICU:	Instrument Control Unit
 ID:	Identifier
@@ -572,7 +566,7 @@ MOCD-B:	Mission Operation Concept Document Part B
 MOGS:	Mission Operations Ground Segment
 MOI:	Moment Of Inertia
 MOND:	MOdified Newtonian Dynamics
-MOONS:	Multi-Object Optical and Near-infrared Spectrograph for VLT (Instrument for VLT: 2018)
+MOONS:	Multi-Object Optical and Near-infrared Spectrograph for VLT (Instrument for VLT, 2018)
 MOS:	Margin Of Safety / Multi-Object Spectrograph / Metal-Oxyde Silicon
 MOSFET:	Metal-Oxyde Semiconductor Field-Effect Transistor
 MOU:	Memorandum Of Understanding
@@ -601,8 +595,7 @@ NC:	Non Convolutive
 NCR:	Non-Conformance Report
 NCRB:	Non-Conformance Review Board
 NCTS:	Non-Conformance Tracking System
-NDI:	Non-Destructive Inspection
-NDI:	Normalised Detection Irradiance
+NDI:	Non-Destructive Inspection / Normalised Detection Irradiance
 NDRO:	Non Destructive Readout
 NEP:	North Ecliptic Pole
 NFW:	Navarro Frenk and White
@@ -658,7 +651,7 @@ NI-SA:	NISP Structure Assembly
 NI-SCA:	NISP Sensor Chip Assembly (NISP)
 NI-SCE:	NISP Sensor Chip Electronics (NISP)
 NI-SCS:	NISP Sensor Chip System (NISP)
-NI-SSS:	NISP Sidecar Support Structure (NISP)
+NI-SSS:	NISP Sidecar Support Structure (NISP) / NI-DS Sidecar Support Structure (NISP)
 NISP:	Near Infrared Spectrometer and Photometer (NISP)
 NI-TC:	NISP Thermal Control (NISP)
 NI-ITE:	NI-ICU Test equipment (NISP)
@@ -667,7 +660,6 @@ NI-IWS:	NISP Instrument Workstation (NISP)
 NI-OMS:	NI-OMA Simulator (NISP)
 NI-OTS:	NI-OMA Thermal control Simulator (NISP)
 NI-SIS:	NISP S/C I/F Simulator (NISP)
-NI-SSS:	NI-DS Sidecar Support Structure (NISP)
 NI-SST:	NI-SCS Test equipment (NISP)
 NI-WE:	NISP Warm Electronics (NISP)
 NI-WIS:	NI-WE Test equipment S/C I/F Simulator (NISP)
@@ -733,8 +725,7 @@ PCDU:	Power Conditioning and Distribution Unit
 PCE:	Photon to electron Conversion Efficiency
 PDCU:	Power Distribution Control Unit
 PDD:	Parameter Definition Document / Payload Definition Document / Product Definition Document
-PDF:	Probability Density Function
-PDF:	Probability Distribution Function
+PDF:	Probability Density Function / Probability Distribution Function
 PDHU:	Processing Data Handling Unit
 PDR:	Preliminary Design Review
 PEM:	Proximity Electronic Module
@@ -770,11 +761,10 @@ PS2:	Pan-STARRS-2
 PSD:	Power Spectral Density
 PSF:	Point Spread Function
 PSR:	Pre-Ship Review
-PSU:	Power Supply Unit (ROE VIS)
+PSU:	Power Supply Unit (ROE VIS) / Power Supply Unit (VIS)
 PWM:	Pulse Width Modulation
 PT:	Product Tree
 PTR:	Post Test Review
-PSU:	Power Supply Unit (VIS)
 PV:	Performance Verification
 QA:	Quality Assurance
 QAITM:	Quality AIT Manager
@@ -836,8 +826,7 @@ SCM:	Software Configuration Management
 SCMP:	Software Configuration Management Plan
 SCR:	Software Change Request
 SCOE:	Specific Check Out Equipment
-SCOS:	Satellite Control and Operation System
-SCOS:	Space Craft Operating System
+SCOS:	Satellite Control and Operation System / Space Craft Operating System
 SCS:	Sensor Chip System (NISP)
 SDC:	Science Data Center (SGS)
 SDC-DEV:	SDC-DEVelopment (SGS)
@@ -911,12 +900,10 @@ SRE:	ESA Science and Robotic Exploration
 SRE-O:	SRE-Operations department
 SRR:	System Requirements Review
 SSA:	SunShield Assembly
-SSC:	Sensor System Chip
-SSC:	Space Science Center (Denmark)
+SSC:	Sensor System Chip / Space Science Center (Denmark)
 SSE:	Sun-Spacecraft Earth angle
 SSH:	SunSHield
-ST:	Science Team
-ST:	Steering Committee
+ST:	Science Team / Steering Committee
 STAR:	Special Thanks And Recognition
 STEP:	Shear Testing Programme
 STFC:	Science and Technology Facilities Council (UK)
@@ -1076,7 +1063,11 @@ def read(lines):
         line = line.strip()
         if not line or line.startswith('#'):
             continue
-        key, val = line.split(':')       # ACRONYM: definition
+        try:
+            key, val = line.split(':')       # ACRONYM: definition
+        except ValueError:
+            print("Error: cannot decipher line", line)
+            continue
         val = val.strip()
         if key not in d:
             d[key] = val
