@@ -7,7 +7,7 @@ from __future__ import print_function
 Euclid Acronym Translator.
 """
 
-__version__ = "Time-stamp: <2015-03-30 10:55:34 ycopin>"
+__version__ = "Time-stamp: <2016-09-09 16:18:04 ycopin>"
 __author__ = "Yannick Copin <y.copin@ipnl.in2p3.fr>"
 
 ecal = """
@@ -1004,3 +1004,7 @@ if __name__ == '__main__':
     for arg in args:
         print("%*s: %s" % (maxl, arg,
                            d.get(arg, 'YAUA (Yet Another Unknown Acronym)')))
+
+# Local Variables:
+# time-stamp-line-limit: 10
+# End:
