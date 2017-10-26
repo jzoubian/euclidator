@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+"""
+EUCLID Acronym translaTOR.
+"""
+
 from __future__ import print_function
 
-"""
-Euclid Acronym Translator.
-"""
-
-__version__ = "Time-stamp: <2017-05-09 20:18:13 ycopin>"
+__version__ = "Time-stamp: <2017-10-26 19:11:31 ycopin>"
 __author__ = "Yannick Copin <y.copin@ipnl.in2p3.fr>"
 
 ecal = """
@@ -917,6 +917,7 @@ SVM:	SerVice Module
 SVN:	SubVersioN
 SVT:	System Verification Testing
 SVVP:	System Validation and Verification Plan
+STS:	Software Test Specifications
 STScI:	Space Telescope Science Institute (Baltimore, Maryland, USA)
 S/W:	SoftWare
 SWG:	Science Working Group
@@ -1079,21 +1080,22 @@ def read(lines):
 
 if __name__ == '__main__':
 
-    import optparse
+    import argparse
     from cStringIO import StringIO
     import re
 
-    usage = "usage: [%prog] [options] ACRONYM [ACRONYM2 ...]"
-    parser = optparse.OptionParser(usage, version=__version__)
+    parser = argparse.ArgumentParser(description=__doc__)
 
-    parser.add_option("-E", "--regex", action="store_true",
+    parser.add_argument('acronym', nargs='*')
+    parser.add_argument("-E", "--regex", action="store_true",
                       help="Interpret arguments as regular expressions.",
                       default=False)
-    parser.add_option("-R", "--reversed", action="store_true",
+    parser.add_argument("-R", "--reversed", action="store_true",
                       help="Reversed look-up (always regex).",
                       default=False)
+    parser.add_argument('--version', action='version', version=__version__)
 
-    opts, args = parser.parse_args()
+    args = parser.parse_args()
 
     d = read(StringIO(ecal))
 
@@ -1105,18 +1107,22 @@ if __name__ == '__main__':
 
     maxl = max( len(key) for key in d )  # Length of longest acronym
 
-    if not args:
-        args = sorted(d.keys())
-    elif opts.reversed:
-        args = [ key for arg in args
-                 for key, val in d.items()
-                 if re.search(arg, val, re.IGNORECASE) ]
-    elif opts.regex:
-        args = [ key for arg in args for key in d if re.search(arg, key) ]
+    if not args.acronym:
+        acronyms = sorted(d.keys())
+    elif args.regex:
+        acronyms = [ key for acronym in args.acronym
+                     for key in d
+                     if re.search(acronym, key) ]
+    elif args.reversed:
+        acronyms = [ key for acronym in args.acronym
+                     for key, val in d.items()
+                     if re.search(acronym, val, re.IGNORECASE) ]
+    else:
+        acronyms = args.acronym
 
-    for arg in args:
-        print("%*s: %s" % (maxl, arg,
-                           d.get(arg, 'YAUA (Yet Another Unknown Acronym)')))
+    for acronym in acronyms:
+        print("%*s: %s" % (maxl, acronym,
+                           d.get(acronym, 'YAUA (Yet Another Unknown Acronym)')))
 
 # Local Variables:
 # time-stamp-line-limit: 10
