@@ -7,14 +7,14 @@ EUCLID Acronym translaTOR.
 
 from __future__ import print_function
 
-__version__ = "Time-stamp: <2017-10-26 19:11:31 ycopin>"
+__version__ = "Time-stamp: <2017-11-07 16:31:56 ycopin>"
 __author__ = "Yannick Copin <y.copin@ipnl.in2p3.fr>"
 
 ecal = """
 Title: Euclid Consortium Acronym List
 Reference: EUCL-IAP-LI-1-001
-Version: 3.00.1
-Date: 15/09/2016 with additions [added]
+Version: 3.00.2
+Date: 2017-11-07 with additions [added]
 
 2dF:	Two Degree Field
 2MASS:	Two Micron All Sky Survey
@@ -543,6 +543,7 @@ MCDR:	Mission Critical Design Review
 MCMC:	Markov Chain Monte Carlo
 MCRR:	Mission Commissioning Results Review
 MCT:	Mercury Cadmium Telluride
+MDB:	Mission Data Base [added]
 MDE:	M2M Drive Electronics
 MDPA:	Multi-DSP/Processor Architecture
 MF:	Mass Function
@@ -910,6 +911,7 @@ STFC:	Science and Technology Facilities Council (UK)
 STM:	Structural & Thermal Model
 STR:	Star TRacker
 SU:	Shutter Unit
+SUM:	Software User Manual [added]
 SUMIRE:	Subaru Measurement of Images and Redshifts (Instrument for Subaru telescope)
 SUNGLASS:	Simulated Universes for Gravitational Lensing Anaysis and Shear Surveys
 SUR:	Science User Requirements
