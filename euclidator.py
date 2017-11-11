@@ -7,13 +7,13 @@ EUCLID Acronym translaTOR.
 
 from __future__ import print_function
 
-__version__ = "Time-stamp: <2017-11-07 16:31:56 ycopin>"
+__version__ = "Time-stamp: <2017-11-11 17:08 ycopin@lyonovae03.in2p3.fr>"
 __author__ = "Yannick Copin <y.copin@ipnl.in2p3.fr>"
 
 ecal = """
 Title: Euclid Consortium Acronym List
 Reference: EUCL-IAP-LI-1-001
-Version: 3.00.2
+Version: 3.00.3
 Date: 2017-11-07 with additions [added]
 
 2dF:	Two Degree Field
@@ -792,6 +792,7 @@ RFQ:	Request For Quotation
 RFW:	Request For Waiver
 RGMM:	Reduced Geometrical Mathematical Model
 RID:	Review Item Discrepancy
+RIDS:	Review Item Discrepancy System [added]
 RMS:	Root Mean Square
 RMW:	Read Modify Write
 ROE:	Read-Out Electronics (VIS) / Royal Observatory Edinburgh (Edinburgh, UK)
