@@ -1081,22 +1081,47 @@ def read(lines):
 
     return d
 
+from difflib import SequenceMatcher
+import functools
+
+def get_similar(a, b):
+    return SequenceMatcher(None, a, b).ratio()
+
+def float_in_range(arg, min, max):
+    try:
+        value = float(arg)
+    except ValueError as err:
+       raise argparse.ArgumentTypeError(str(err))
+
+    if value < min or value > max:
+        message = "Expected "+str(min)+" <= value <= "+str(max)+", got value = "+str(arg)
+        raise argparse.ArgumentTypeError(message)
+
+    return value
+
+check_fraction = functools.partial(float_in_range, min=0.0, max=1.0)
+
 if __name__ == '__main__':
 
     import argparse
     from cStringIO import StringIO
     import re
 
-    parser = argparse.ArgumentParser(description=__doc__)
+    parser = argparse.ArgumentParser(prog='euclidator.py', description=__doc__)
 
     parser.add_argument('acronym', nargs='*')
+
     parser.add_argument("-E", "--regex", action="store_true",
                       help="Interpret arguments as regular expressions.",
                       default=False)
+
     parser.add_argument("-R", "--reversed", action="store_true",
                       help="Reversed look-up (always regex).",
                       default=False)
+
     parser.add_argument('--version', action='version', version=__version__)
+
+    parser.add_argument('-S', '--similar', required=False, type=check_fraction, metavar="[0.0-1.0]", help='Print similar keyword, the argument value is the match fraction. Default is -1 (not used).', default=-1)
 
     args = parser.parse_args()
 
@@ -1126,6 +1151,14 @@ if __name__ == '__main__':
     for acronym in acronyms:
         print("%*s: %s" % (maxl, acronym,
                            d.get(acronym, 'YAUA (Yet Another Unknown Acronym)')))
+
+    if args.similar>=0:
+        print()
+        print("Similar acronyms:")
+        for key in d.keys():
+            if get_similar(key, acronym)>args.similar:
+                print(key, end=" ")
+        print() 
 
 # Local Variables:
 # time-stamp-line-limit: 10
