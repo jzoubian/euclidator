@@ -13,14 +13,13 @@ ionic cordova prepare
 
 # add platform if needed
 # (by default android is activated)
-ionic platforms add ios
+ionic cordova platforms add ios
 
 #############
 # Build app #
 #############
 
-ionic build android
-ionic build ios
+ionic cordova build android
 
 ###########
 # Run app #
@@ -30,10 +29,10 @@ ionic build ios
 ionic serve 
 
 # on your phone
-ionic run ios --device
+ionic cordova run ios --device
 
 # on emulator
-ionic emulate android --target="AVD_for_2_7"
+ionic cordova emulate android --target="AVD_for_2_7"
 
 ###########
 # Publish #

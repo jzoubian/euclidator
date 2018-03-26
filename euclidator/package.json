@@ -1,8 +1,8 @@
 {
   "name": "euclidator",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "author": "Julien Zoubian",
-  "homepage": "https://gist.github.com/ycopin/10155d1aae12b8dec08b",
+  "homepage": "https://github.com/jzoubian/euclidator",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
