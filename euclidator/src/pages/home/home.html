@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>EUCLID Acronym translaTOR</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-list>
+    <ion-item text-wrap *ngFor="let item of ecal">
+      {{ item.acronyme }}: {{ item.words }} 
+    </ion-item>
+  </ion-list>
+</ion-content>
