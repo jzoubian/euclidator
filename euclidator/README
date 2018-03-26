@@ -1,0 +1,43 @@
+##################
+# Initialization #
+##################
+
+# Requirements:
+# * cordova
+# * ionic
+# see https://ionicframework.com/getting-started
+
+# Initialize ionic:
+ionic cordova resources
+ionic cordova prepare
+
+# add platform if needed
+# (by default android is activated)
+ionic platforms add ios
+
+#############
+# Build app #
+#############
+
+ionic build android
+ionic build ios
+
+###########
+# Run app #
+###########
+
+# in navigator
+ionic serve 
+
+# on your phone
+ionic run ios --device
+
+# on emulator
+ionic emulate android --target="AVD_for_2_7"
+
+###########
+# Publish #
+###########
+
+Use Android Studio:
+https://cordova.apache.org/docs/en/7.x/guide/platforms/android/index.html
