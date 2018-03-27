@@ -31,11 +31,6 @@ www/
 $RECYCLE.BIN/
 resources/android/
 resources/ios/
-resources/icon.png.md5
-resources/icon_512x512.png
-resources/screen_1024x500.png
-resources/screen_1024x512.png
-resources/splash.png.md5
 
 .DS_Store
 Thumbs.db
