@@ -1,9 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="euclid.tools.euclidator" version="0.2.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="euclid.tools.euclidator" version="0.2.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Euclidator</name>
     <description>Euclid Consortium Acronym List</description>
     <author email="zoubian@cppm.in2p3.fr" href="https://www.cppm.in2p3.fr/~zoubian/">Julien Zoubian</author>
     <content src="index.html" />
+    <content original-src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -11,6 +12,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <preference name="loadUrlTimeoutValue" value="700000" />
     <preference name="ScrollEnabled" value="false" />
     <preference name="android-minSdkVersion" value="16" />
     <preference name="BackupWebStorage" value="none" />
@@ -81,6 +83,5 @@
     <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="^1.1.16" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
-    <plugin name="cordova-plugin-crosswalk-webview" spec="^2.4.0" />
     <engine name="android" spec="~7.0.0" />
 </widget>

@@ -40,30 +40,3 @@ ionic cordova emulate android --target="AVD_for_2_7"
 
 Use Android Studio:
 https://cordova.apache.org/docs/en/7.x/guide/platforms/android/index.html
-
-#####################
-# Crosswalk webview #
-#####################
-
-Build with cordova-plugin-crosswalk-webview failed.
-
-Solution: add in vim platforms/android/app/build.gradle:
-
-```
-configurations.all {
-    resolutionStrategy {
-        force 'com.android.support:support-v4:27.1.0'
-    }
-}
-```
-
-Also take care when you are splitting for some architectures (cordova-plugin-crosswalk-webview do) but you don't have any native implementation on those architectures, the playstore shows "none" as "native platform".
-
-The problem is that "none" is interpreted as "all architectures are supported" and then the apk will be downloaded based on the versionCode.
-
-The play store seems to recognize the architecture supported by an apk based on the lib/$arch folder. So, if the apk lacks this folder, the playstore shows "none" as "native platform" (you can check this by unzipping the apk).
-
-If you have an apk with "native platform" as "none" with higher versionCode than another that do has a native implementation, the user will end up downloading the apk with higher versionCode. Depending on the app or configuration, this will just work fine, or not.
-
-The problem is generated on how gradle splits the apks and you have to be careful on how you define the versionCode for your splits.
-"""
