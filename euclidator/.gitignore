@@ -35,3 +35,6 @@ resources/ios/
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
+
+deployment_cert.der
+android.jks
